@@ -107,3 +107,5 @@ source $ZSH/oh-my-zsh.sh
 function copy(){
 	xclip -selection c
 }
+
+alias die="shutdown now"
