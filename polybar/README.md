@@ -1,7 +1,5 @@
 # Polybar Config
-
-ONLY MODIFY THE [config.template file](./config.template) IF YOU WANT TO MODIFY POLYBAR
-
+IF YOU WANT TO CHANGE THE POLYBAR CONFIG MODIFY  [config.template](./config.template) AND DO NOT TOUCH THE OTHER FILES!
 ## Requirements
 - [pywal](https://aur.archlinux.org/packages/pywal-git)
 - [polybar](https://archlinux.org/packages/extra/x86_64/polybar/)
