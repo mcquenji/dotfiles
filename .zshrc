@@ -117,12 +117,13 @@ function pull-config() {
 	echo "Pulling latest config files from git..."
 
 	cd ~/.config
-	git pull
+	git pull -q
 
 	echo "Updating files outside of ~/.config..."
 
 	# copy all config files to home directory
 	cp .zshrc ~/.zshrc -f
+	betterlockscreen -u ~/.config/wallpapers/wallpaperflare.com_wallpaper3 -q
 
 	# restore current working directory
 	cd $cwd
@@ -131,4 +132,12 @@ function pull-config() {
 
 	# reload zsh config
 	source ~/.zshrc
+}
+
+alias lock="betterlockscreen -l"
+
+function hibernate() {
+	lock
+
+	systemctl hibernate
 }
