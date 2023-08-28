@@ -136,4 +136,8 @@ function pull-config() {
 
 # power menu
 alias lock="betterlockscreen -l -q"
-alias hibernate="systemctl hibernate"
+function hibernate() {
+	lock
+
+	systemctl hibernate
+}
