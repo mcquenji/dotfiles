@@ -36,6 +36,7 @@ ln -s .zshrc ~/.zshrc -f
 - [google-chrome](https://aur.archlinux.org/packages/google-chrome)
 - [picom](https://archlinux.org/packages/extra/x86_64/picom/)
 - [xclip](https://archlinux.org/packages/extra/x86_64/xclip/)
+- [thunar](https://archlinux.org/packages/extra/x86_64/thunar/)
 
 ## Additional Packages
 
