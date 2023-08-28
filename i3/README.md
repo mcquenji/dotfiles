@@ -7,4 +7,4 @@
 - [polybar](https://archlinux.org/packages/extra/x86_64/polybar/)
 - [feh](https://archlinux.org/packages/extra/x86_64/feh/)
 - [pywal](https://aur.archlinux.org/packages/pywal-git)
-- [dolphin](https://archlinux.org/packages/extra/x86_64/dolphin/)
+- [thunar](https://archlinux.org/packages/extra/x86_64/thunar/)
