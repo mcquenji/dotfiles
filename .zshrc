@@ -134,7 +134,7 @@ function pull-config() {
 	source ~/.zshrc
 }
 
-alias lock="betterlockscreen -lq"
+alias lock="betterlockscreen -l -q"
 
 function hibernate() {
 	lock
