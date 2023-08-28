@@ -14,7 +14,7 @@ git pull
 
 ```bash
 cd ~/.config
-ln -s .zshrc ~/.zshrc
+ln -s .zshrc ~/.zshrc -f
 ```
 
 ## Requirements
