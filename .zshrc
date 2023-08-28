@@ -134,10 +134,6 @@ function pull-config() {
 	source ~/.zshrc
 }
 
+# power menu
 alias lock="betterlockscreen -l -q"
-
-function hibernate() {
-	lock
-
-	systemctl hibernate
-}
+alias hibernate="systemctl hibernate"
