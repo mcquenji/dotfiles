@@ -1,4 +1,3 @@
-
 [Default Applications]
 video/vnd.mpegurl=vlc.desktop
 video/3gpp2=vlc.desktop
@@ -15,3 +14,6 @@ video/x-msvideo=vlc.desktop
 video/x-ms-wmv=vlc.desktop
 video/x-flv=vlc.desktop
 video/vnd.rn-realvideo=vlc.desktop
+
+[Added Associations]
+inode/directory=org.gnome.FileRoller.desktop;
