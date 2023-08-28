@@ -17,3 +17,5 @@ git pull
 - [pywal](https://aur.archlinux.org/packages/pywal-git)
 - [ttf-font-awesome](https://archlinux.org/packages/extra/any/ttf-font-awesome/)
 - [breeze-icons](https://archlinux.org/packages/extra/any/breeze-icons/)
+- [sxiv](https://archlinux.org/packages/extra/x86_64/sxiv/)
+- [vlc](https://archlinux.org/packages/extra/x86_64/vlc/)
