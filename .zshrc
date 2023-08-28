@@ -116,5 +116,5 @@ function pull-config() {
 	git pull
 
 	# copy all config files to home directory
-	cp .zshrc ~/.zshrc
+	cp .zshrc ~/.zshrc -f
 }
