@@ -127,6 +127,8 @@ function pull-config() {
 	# restore current working directory
 	cd $cwd
 
+	echo "Applying changes..."
+
 	# reload zsh config
 	source ~/.zshrc
 }
