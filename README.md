@@ -34,6 +34,8 @@ ln -s .zshrc ~/.zshrc -f
 - [zsh-syntax-highlighting plugin](https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df#:~:text=zsh%2Dsyntax%2Dhighlighting%20plugin)
 - [zsh-fast-syntax-highlighting plugin](https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df#:~:text=zsh%2Dsyntax%2Dhighlighting-,zsh%2Dfast%2Dsyntax%2Dhighlighting%20plugin,-git%20clone%20https)
 - [google-chrome](https://aur.archlinux.org/packages/google-chrome)
+- [picom](https://archlinux.org/packages/extra/x86_64/picom/)
+- [xclip](https://archlinux.org/packages/extra/x86_64/xclip/)
 
 ## Additional Packages
 
