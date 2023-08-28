@@ -1,6 +1,6 @@
 # ~/.config/betterlockscreenrc
 
-# default options
+# ptions
 display_on=0
 span_image=true
 lock_timeout=300
@@ -13,9 +13,9 @@ wallpaper_cmd="feh --bg-fill"
 quiet=false
 # i3lockcolor_bin="i3lock-color" # Manually set command for i3lock-color
 
-# default theme
+# theme
 # TODO: match with background
-loginbox=00000066
+loginbox=00000000
 loginshadow=00000000
 locktext="Type password to unlock..."
 font="sans-serif"

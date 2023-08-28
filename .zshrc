@@ -124,6 +124,8 @@ function pull-config() {
 	# copy all config files to home directory
 	cp .zshrc ~/.zshrc -f
 	betterlockscreen -u ~/.config/wallpapers/wallpaperflare.com_wallpaper3 -q
+	sudo cp sleep.conf /etc/systemd/sleep.conf
+	sudo cp system.conf /etc/systemd/sleep.conf
 
 	# restore current working directory
 	cd $cwd
@@ -132,6 +134,7 @@ function pull-config() {
 
 	# reload zsh config
 	source ~/.zshrc
+	sudo systemctl restart systemd-logind 
 }
 
 # power menu

@@ -238,4 +238,4 @@ exec_always --no-startup-id ~/.config/picom/launch.sh &
 bindsym $mod+Shift+Return exec thunar
 
 # Lock screen
-bindsym $mod+l exec "betterlockscreen -l -u .config/wallpapers/wallpaperflare.com_wallpaper(5).jpg"
+bindsym $mod+l exec "betterlockscreen -l -u .config/wallpapers/wallpaperflare.com_wallpaper3.jpg"
