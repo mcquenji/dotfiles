@@ -112,9 +112,17 @@ alias die="shutdown now"
 
 # pull latest changes from git
 function pull-config() {
+	cwd=$(pwd)
+
 	cd ~/.config
 	git pull
 
 	# copy all config files to home directory
 	cp .zshrc ~/.zshrc -f
+
+	# restore current working directory
+	cd $cwd
+
+	# reload zsh config
+	source ~/.zshrc
 }
