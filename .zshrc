@@ -114,8 +114,12 @@ alias die="shutdown now"
 function pull-config() {
 	cwd=$(pwd)
 
+	echo "Pulling latest config files from git..."
+
 	cd ~/.config
 	git pull
+
+	echo "Updating files outside of ~/.config..."
 
 	# copy all config files to home directory
 	cp .zshrc ~/.zshrc -f
