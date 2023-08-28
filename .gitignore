@@ -1,3 +1,5 @@
+.obsidian
+
 Code
 dconf
 google-chrome
@@ -8,5 +10,4 @@ Thunar
 xfce4
 baloofileinformationrc
 xarchiver
-
-.obsidian
+QtProject.conf

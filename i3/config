@@ -239,3 +239,6 @@ bindsym $mod+Shift+Return exec thunar
 
 # Lock screen
 bindsym $mod+l exec "betterlockscreen -l -u .config/wallpapers/wallpaperflare.com_wallpaper3.jpg"
+
+# Screenshot
+bindsym $mod+Shift+s exec flameshot gui
