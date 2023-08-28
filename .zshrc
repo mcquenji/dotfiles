@@ -104,8 +104,17 @@ source $ZSH/oh-my-zsh.sh
 (cat ~/.cache/wal/sequences &)
 
 # Copy to clipboard cmd
-function copy(){
+function copy() {
 	xclip -selection c
 }
 
 alias die="shutdown now"
+
+# pull latest changes from git
+function pull-config() {
+	cd ~/.config
+	git pull
+
+	# copy all config files to home directory
+	cp .zshrc ~/.zshrc
+}
