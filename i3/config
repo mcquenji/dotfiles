@@ -41,7 +41,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
-set $up l
+set $up ü
 set $down k
 set $left j
 set $right semicolon
@@ -236,3 +236,6 @@ exec_always --no-startup-id ~/.config/picom/launch.sh &
 
 # Filemanager
 bindsym $mod+Shift+Return exec thunar
+
+# Lock screen
+bindsym $mod+l exec "betterlockscreen -l -u .config/wallpapers/wallpaperflare.com_wallpaper(5).jpg"
