@@ -121,7 +121,7 @@ function pull-config() {
 
 	echo "Updating files outside of ~/.config..."
 
-	# copy all config files to home directory
+	# copy files that have to be elsewhere
 	cp .zshrc ~/.zshrc -f
 	betterlockscreen -u ~/.config/wallpapers/wallpaperflare.com_wallpaper3 -q
 	sudo cp sleep.conf /etc/systemd/sleep.conf
@@ -134,7 +134,7 @@ function pull-config() {
 
 	# reload zsh config
 	source ~/.zshrc
-	sudo systemctl restart systemd-logind 
+	sudo systemctl restart systemd-logind
 }
 
 # power menu
