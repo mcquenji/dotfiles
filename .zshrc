@@ -126,6 +126,7 @@ function pull-config() {
 	betterlockscreen -u ~/.config/wallpapers/wallpaperflare.com_wallpaper3 -q
 	sudo cp sleep.conf /etc/systemd/sleep.conf
 	sudo cp system.conf /etc/systemd/system.conf
+	mkdir -p ~/git
 
 	# restore current working directory
 	cd $cwd
@@ -150,28 +151,6 @@ alias pacman="sudo pacman"
 
 # github stuff
 function gh() {
-	cd ~/git/$1
-}
-
-function _gh() {
-	compadd $(ls ~/git)
-}
-
-compdef _gh gh
-
-function git() {
-	mkdir -p ~/git
-
-	# clone in current directory
-	if [ "$1" = "clone" ] && [ "$2" = "here" ]; then
-		git clone $3
-
-		# cd into cloned folder
-		cd $3
-
-		return
-	fi
-
 	# clone into ~/git
 	if [ "$1" = "clone" ]; then
 		cd ~/git
@@ -184,6 +163,12 @@ function git() {
 		return
 	fi
 
-	# else proxy to git command
-	$(which git) $@
+	# else just cd into folder
+	cd ~/git/$1
 }
+
+function _gh() {
+	compadd $(ls ~/git)
+}
+
+compdef _gh gh
