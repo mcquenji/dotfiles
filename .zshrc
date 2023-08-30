@@ -152,13 +152,14 @@ alias pacman="sudo pacman"
 # github stuff
 function gh() {
 	# clone into ~/git
-	if [ "$1" = "clone" ]; then
+	if [ "$1" = "--clone" ]; then
+		cwd=$(pwd)
+
 		cd ~/git
 
 		git clone $2
 
-		# cd into cloned folder
-		cd $2
+		cd $cwd
 
 		return
 	fi
@@ -167,8 +168,13 @@ function gh() {
 	cd ~/git/$1
 }
 
+alias clone="gh --clone"
+
 function _gh() {
-	compadd $(ls ~/git)
+	if ((CURRENT == 2)); then
+		compadd $(ls ~/git)
+	fi
+
 }
 
 compdef _gh gh
