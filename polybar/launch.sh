@@ -8,4 +8,10 @@ killall -q polybar
 
 while pgrep -u $UID -x polybar > /dev/null; do sleep 1; done
 
+# Load wallpaper
+wal -i ~/.config/wallpapers
+
+# Load theme from wallpaper
+~/.config/polybar/wal-polybar.py
+
 polybar

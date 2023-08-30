@@ -144,3 +144,6 @@ function hibernate() {
 
 	systemctl hibernate
 }
+
+# Always run pacman as sudo as i keep forgetting
+alias pacman="sudo pacman"
