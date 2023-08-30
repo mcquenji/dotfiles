@@ -194,7 +194,7 @@ default_floating_border pixel 0
 gaps inner 10
 
 # Open browser with $mod+w
-bindsym $mod+w exec "google-chrome-stable" 
+bindsym $mod+w exec "google-chrome-stable --force-dark-mode" 
 
 # Wallpapers & launch polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -207,7 +207,7 @@ exec_always --no-startup-id ~/.config/picom/launch.sh &
 bindsym $mod+Shift+Return exec thunar
 
 # Lock screen
-bindsym $mod+l exec "betterlockscreen -l -u .config/wallpapers/wallpaperflare.com_wallpaper3.jpg"
+bindsym $mod+l exec "betterlockscreen -l"
 
 # Screenshot
 bindsym $mod+Shift+s exec flameshot gui

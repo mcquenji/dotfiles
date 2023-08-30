@@ -125,7 +125,7 @@ function pull-config() {
 	cp .zshrc ~/.zshrc -f
 	betterlockscreen -u ~/.config/wallpapers/wallpaperflare.com_wallpaper3 -q
 	sudo cp sleep.conf /etc/systemd/sleep.conf
-	sudo cp system.conf /etc/systemd/sleep.conf
+	sudo cp system.conf /etc/systemd/system.conf
 
 	# restore current working directory
 	cd $cwd
