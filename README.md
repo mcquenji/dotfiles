@@ -1,5 +1,13 @@
 # dotfiles
 
+## TODO
+
+[ ] Customize d-menu / drun
+[ ] Get polybar system tray working
+[ ] Clipboard history
+[ ] Sync gtk theme with wal (if possible)
+[ ] polybar network manager drop down menu
+
 ## .config
 
 ```bash
