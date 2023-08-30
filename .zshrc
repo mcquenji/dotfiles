@@ -147,3 +147,43 @@ function hibernate() {
 
 # Always run pacman as sudo as i keep forgetting
 alias pacman="sudo pacman"
+
+# github stuff
+function gh() {
+	cd ~/git/$1
+}
+
+function _gh() {
+	compadd $(ls ~/git)
+}
+
+compdef _gh gh
+
+function git() {
+	mkdir -p ~/git
+
+	# clone in current directory
+	if [ "$1" = "clone" ] && [ "$2" = "here" ]; then
+		git clone $3
+
+		# cd into cloned folder
+		cd $3
+
+		return
+	fi
+
+	# clone into ~/git
+	if [ "$1" = "clone" ]; then
+		cd ~/git
+
+		git clone $2
+
+		# cd into cloned folder
+		cd $2
+
+		return
+	fi
+
+	# else proxy to git command
+	$(which git) $@
+}
