@@ -123,13 +123,14 @@ function pull-config() {
 
 	# copy files that have to be elsewhere
 	cp .zshrc ~/.zshrc -f
+	mkdir -p ~/git # create git folder if it doesn't exist
 	betterlockscreen -u ~/.config/wallpapers/wallpaperflare.com_wallpaper3 -q
 	sudo cp sleep.conf /etc/systemd/sleep.conf
 	sudo cp system.conf /etc/systemd/system.conf
-	mkdir -p ~/git
 	sudo cp lightdm/lightdm.conf /etc/lightdm/lightdm.conf -f
 	sudo cp lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf -f
-	sudo cp lightdm/theme /usr/share/lightdm-webkit/themes/glorious -rf
+	sudo rm -rf /usr/share/lightdm-webkit/themes/theme
+	sudo cp lightdm/theme /usr/share/lightdm-webkit/themes/theme -r
 
 	# restore current working directory
 	cd $cwd
