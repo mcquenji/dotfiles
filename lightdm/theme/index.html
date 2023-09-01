@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
 	<link rel='stylesheet' href='css/style.css' class='style'>
 	<title></title>
 </head>
+
 <body>
 	<div class='body-background background'></div>
 	<div class='screen' id='screen-dark'></div>
@@ -15,10 +17,8 @@
 			<div id='greeter-clock' class='greeter-content'></div>
 			<div id='greeter-date' class='greeter-content'></div>
 		</div>
-		<div id='arrow-indicator-greeter' class='arrow-indicator'>
-			<span></span>
-			<span></span>
-			<span></span>
+		<div id='click-msg-greeter'>
+			Click anywhere to login
 		</div>
 	</div>
 	<div class='screen' id='screen-goodbye'>
@@ -40,7 +40,7 @@
 					<img id='button-greeter-screen-image' class='button-login-form-image' draggable='false' src='assets/back.svg'></img>
 				</button>
 				<div id='input-password-box'>
-					<input type='password' id='input-password' autocomplete='off' placeholder='Enter Password'/>
+					<input type='password' id='input-password' autocomplete='off' placeholder='Enter Password' />
 				</div>
 				<button id='button-authenticate' class='button-login-form'>
 					<img id='button-authenticate-image' class='button-login-form-image' draggable='false' src='assets/forward.svg'></img>
@@ -107,15 +107,15 @@
 				<div class='sidebar-group' id='sidebar-settings-selection'>
 					<div id='sidebar-user-profile'>
 						<div id='sidebar-user-profile-content'>
-								<div id='user-profile-image-parent'>
-									<img id='user-profile-image' draggable='false' src='assets/profiles/user.svg' onerror='this.src="assets/profiles/user.svg"'>
-									</img>
-								</div>
-								<div id='user-profile-clock-parent'>
-									<div id='user-profile-clock'>08:00 AM</div>
-									<div id='user-profile-date'>Thursday, August 04, 2020</div>
-								</div>
+							<div id='user-profile-image-parent'>
+								<img id='user-profile-image' draggable='false' src='assets/profiles/user.svg' onerror='this.src="assets/profiles/user.svg"'>
+								</img>
 							</div>
+							<div id='user-profile-clock-parent'>
+								<div id='user-profile-clock'>08:00 AM</div>
+								<div id='user-profile-date'>Thursday, August 04, 2020</div>
+							</div>
+						</div>
 					</div>
 					<ul class='sidebar-settings-item-list' id='selection-list'>
 						<li>
@@ -170,7 +170,7 @@
 				</div>
 				<div class='sidebar-group sidebar-group-settings' id='sidebar-settings-accounts'>
 					<ul class='sidebar-settings-item-list' id='accounts-list'>
-							<!--  Look for accounts.js. -->
+						<!--  Look for accounts.js. -->
 					</ul>
 				</div>
 				<div class='sidebar-group sidebar-group-settings' id='sidebar-settings-sessions'>
@@ -184,7 +184,7 @@
 					</ul>
 				</div>
 				<div class='sidebar-group sidebar-group-settings' id='sidebar-settings-themes'>
-					
+
 					<div class='sidebar-settings-content'>
 						<label for='sidebar-settings-bg-input' class='label-settings-input'>Background Color and Opacity</label>
 						<div id='input-bg-parent' class='input-parent'>
@@ -266,8 +266,8 @@
 					</div>
 					<div class='sidebar-settings-content'>
 						<div id='input-buttons-parent' class='input-parent'>
-							<button type='button'  class='button-input' id='button-input-keybind-reset'>Reset</button>
-							<button type='button'  class='button-input' id='button-input-keybind-apply'>Apply</button>
+							<button type='button' class='button-input' id='button-input-keybind-reset'>Reset</button>
+							<button type='button' class='button-input' id='button-input-keybind-apply'>Apply</button>
 						</div>
 					</div>
 				</div>
@@ -323,4 +323,5 @@
 		</strong>
 	</noscript>
 </body>
+
 </html>
