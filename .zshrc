@@ -129,7 +129,7 @@ function pull-config() {
 	mkdir -p ~/git
 	sudo cp lightdm/lightdm.conf /etc/lightdm/lightdm.conf -f
 	sudo cp lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf -f
-	sudo cp -rf lightdm/theme /usr/share/lightdm-webkit/themes/theme/glorious -rf
+	sudo cp -rf lightdm/theme /usr/share/lightdm-webkit/themes/glorious -rf
 
 	# restore current working directory
 	cd $cwd
