@@ -127,8 +127,9 @@ function pull-config() {
 	sudo cp sleep.conf /etc/systemd/sleep.conf
 	sudo cp system.conf /etc/systemd/system.conf
 	mkdir -p ~/git
-	sudo cp lightdm.conf /etc/lightdm/lightdm.conf -f
-	sudo cp lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf -f
+	sudo cp lightdm/lightdm.conf /etc/lightdm/lightdm.conf -f
+	sudo cp lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf -f
+	sudo cp -rf lightdm/theme /usr/share/lightdm-webkit/themes/theme/glorious -rf
 
 	# restore current working directory
 	cd $cwd
