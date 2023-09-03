@@ -22,7 +22,7 @@ git pull
 
 ```bash
 cd ~/.config
-ln -s .zshrc ~/.zshrc -f
+cp .zshrc ~/.zshrc -f
 ```
 
 ## Requirements
