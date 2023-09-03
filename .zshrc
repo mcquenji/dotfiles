@@ -124,7 +124,7 @@ function pull-config() {
 	# copy files that have to be elsewhere
 	cp .zshrc ~/.zshrc -f
 	mkdir -p ~/git # create git folder if it doesn't exist
-	betterlockscreen -u ~/.config/wallpapers/wallpaperflare.com_wallpaper3 -q
+	betterlockscreen -u ~/.config/lockscreen.png -q
 	sudo cp sleep.conf /etc/systemd/sleep.conf
 	sudo cp system.conf /etc/systemd/system.conf
 	sudo cp lightdm/lightdm.conf /etc/lightdm/lightdm.conf -f
