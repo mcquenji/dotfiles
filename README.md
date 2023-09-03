@@ -2,7 +2,7 @@
 
 ## TODO
 
-- [ ] Customize d-menu / drun
+- [x] Customize d-menu / drun
 - [x] Get polybar system tray working
 - [ ] Clipboard history
 - [ ] Sync gtk theme with wal (if possible)

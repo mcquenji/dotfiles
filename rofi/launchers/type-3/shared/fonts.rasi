@@ -1,0 +1,13 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Fonts
+ *
+ * TODO: use same font as polybar
+ **/
+
+* {
+    font: "Iosevka Nerd Font 10";
+}
