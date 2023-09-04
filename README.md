@@ -14,7 +14,7 @@
 mkdir -p ~/.config
 cd ~/.config
 git init
-git remote add origin git@github.com:mcquenji/dotfiles.git
+git remote add origin https://github.com/mcquenji/dotfiles.git
 git fetch
 git pull
 ```
