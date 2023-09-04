@@ -9,5 +9,5 @@
  **/
 
 * {
-    font: "Iosevka Nerd Font 10";
+    font: "Cascadia Code Bold 10";
 }
