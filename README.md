@@ -11,6 +11,7 @@
 ## .config
 
 ```bash
+mkdir -p ~/.config
 cd ~/.config
 git init
 git remote add origin git@github.com:mcquenji/dotfiles.git
@@ -21,8 +22,7 @@ git pull
 ## .zshrc
 
 ```bash
-cd ~/.config
-cp .zshrc ~/.zshrc -f
+cp ~/.config/.zshrc ~/.zshrc -f
 ```
 
 ## Requirements
