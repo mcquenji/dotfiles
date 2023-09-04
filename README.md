@@ -50,10 +50,11 @@ sudo pacman -S i3-wm alacritty polybar feh ttf-font-awesome breeze-icons sxiv vl
 ### AUR
 
 ```bash
-yay -S google-chrome
+yay -S google-chrome betterlockscreen
 ```
 
 - [google-chrome](https://aur.archlinux.org/packages/google-chrome)
+- [betterlockscreen](https://aur.archlinux.org/packages/betterlockscreen/)
 
 ### oh-my-zsh
 
