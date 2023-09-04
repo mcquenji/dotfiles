@@ -16,7 +16,7 @@ cd ~/.config
 git init
 git remote add origin https://github.com/mcquenji/dotfiles.git
 git fetch
-git pull
+git checkout origin/master -ft
 ```
 
 ## .zshrc
