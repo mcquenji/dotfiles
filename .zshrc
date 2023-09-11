@@ -184,3 +184,8 @@ function _gh() {
 }
 
 compdef _gh gh
+
+# Homebrew
+path+=('/home/linuxbrew/.linuxbrew/bin')
+
+export PATH
