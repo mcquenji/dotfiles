@@ -8,8 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="custom"
-ZSH_THEME="af-magic"
+ZSH_THEME="custom"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -132,7 +131,7 @@ function pull-config() {
 	sudo cp lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf -f
 	sudo rm -rf /usr/share/lightdm-webkit/themes/theme
 	sudo cp lightdm/theme /usr/share/lightdm-webkit/themes/theme -r
-	cp theme.zsh-theme ~/.oh-my-zsh/themes/custom.zsh-theme -f
+	cp theme.zsh-theme ~/.oh-my-zsh/themes/af-magic.zsh-theme -f
 
 	# restore current working directory
 	cd $cwd
