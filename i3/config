@@ -53,6 +53,8 @@ bindsym $mod+q kill
 bindsym $mod+s exec --no-startup-id ~/.config/rofi/launchers/type-3/launcher.sh
 # lets have both mod+d & mod+s
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-3/launcher.sh
+# aaand lets alos have mod+space
+bindsym $mod+space exec --no-startup-id ~/.config/rofi/launchers/type-3/launcher.sh
 
 # change focus
 bindsym $mod+$left focus left
@@ -96,7 +98,7 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -208,3 +210,7 @@ bindsym $mod+l exec "betterlockscreen -l"
 
 # Screenshot
 bindsym $mod+Shift+s exec flameshot gui
+
+# Brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-val=2 -q set 3%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set 3%+
