@@ -1,7 +1,11 @@
 [$Version]
 update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
 
+[ContextMenu]
+ShowCopyMoveMenu=true
+
 [General]
+BrowseThroughArchives=true
 Version=202
 ViewPropsTimestamp=2023,8,27,20,19,45.542
 
@@ -12,3 +16,6 @@ Places Icons Static Size=22
 [MainWindow]
 MenuBar=Disabled
 ToolBarsMovable=Disabled
+
+[PreviewSettings]
+Plugins=jpegthumbnail,ebookthumbnail,audiothumbnail,djvuthumbnail,opendocumentthumbnail,exrthumbnail,comicbookthumbnail,windowsexethumbnail,cursorthumbnail,kraorathumbnail,appimagethumbnail,svgthumbnail,imagethumbnail,windowsimagethumbnail,directorythumbnail

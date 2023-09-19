@@ -203,7 +203,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec_always --no-startup-id ~/.config/picom/launch.sh &
 
 # Filemanager
-bindsym $mod+Shift+Return exec thunar
+bindsym $mod+Shift+Return exec dolphin ~ --new-window
 
 # Lock screen
 bindsym $mod+l exec "betterlockscreen -l"
