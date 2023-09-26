@@ -112,7 +112,7 @@ alias die="shutdown now"
 
 # pull latest changes from git
 function pull-config() {
-	cwd=$(pwd)
+	cw=$(pwd)
 
 	echo "Pulling latest config files from git..."
 
@@ -188,3 +188,8 @@ compdef _gh gh
 path+=('/home/linuxbrew/.linuxbrew/bin')
 
 export PATH
+
+# Flutter
+
+alias flutter="fvm flutter"
+alias dart="fvm dart"
