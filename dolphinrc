@@ -1,6 +1,10 @@
 [$Version]
 update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
 
+[Baloo KEditCommentDialog]
+1920x1080 screen: Height=226
+1920x1080 screen: Width=264
+
 [ContextMenu]
 ShowCopyMoveMenu=true
 
@@ -12,6 +16,10 @@ ViewPropsTimestamp=2023,8,27,20,19,45.542
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=22
+
+[KPropertiesDialog]
+1920x1080 screen: Height=409
+1920x1080 screen: Width=404
 
 [MainWindow]
 MenuBar=Disabled

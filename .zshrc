@@ -141,6 +141,8 @@ function pull-config() {
 	# reload zsh config
 	source ~/.zshrc
 	sudo systemctl restart systemd-logind
+
+	cd $cw
 }
 
 # power menu
@@ -187,9 +189,18 @@ compdef _gh gh
 # Homebrew
 path+=('/home/linuxbrew/.linuxbrew/bin')
 
+# Rust
+path+=('$HOME/.cargo/bin')
+
+# LaTex
+path+=('/usr/bin/tex')
+
 export PATH
 
 # Flutter
 
 alias flutter="fvm flutter"
 alias dart="fvm dart"
+
+# Java home
+export JAVA_HOME="/usr/lib/jvm/default"
