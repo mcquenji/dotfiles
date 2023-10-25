@@ -175,7 +175,7 @@ function gh() {
 	cd ~/git/$1
 }
 
-alias clone="gh --clone"
+alias gh-clone="gh --clone"
 
 function _gh() {
 	if ((CURRENT == 2)); then
@@ -205,3 +205,15 @@ alias dart="fvm dart"
 
 # Java home
 export JAVA_HOME="/usr/lib/jvm/default"
+
+# Open repo in vscode
+
+function gh-code(){
+	code ~/git/$1
+}
+
+function _gh-code(){
+	compadd $(ls ~/git)
+}
+
+compdef _gh-code gh-code
