@@ -193,7 +193,8 @@ path+=('/home/linuxbrew/.linuxbrew/bin')
 path+=('$HOME/.cargo/bin')
 
 # LaTex
-path+=('/usr/bin/tex')
+path+=('/bin/tex')
+path+=('/bin/python') # python for vscode latex compilation
 
 export PATH
 
