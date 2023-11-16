@@ -194,6 +194,7 @@ gaps inner 10
 
 # Open browser with $mod+w
 bindsym $mod+w exec "google-chrome-stable --force-dark-mode" 
+#bindsym $mod+w exec "google-chrome-stable"
 
 # Wallpapers & launch polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &

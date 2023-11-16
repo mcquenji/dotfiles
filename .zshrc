@@ -210,6 +210,8 @@ export JAVA_HOME="/usr/lib/jvm/default"
 
 function gh-code(){
 	code ~/git/$1
+
+	exit
 }
 
 function _gh-code(){
@@ -217,3 +219,6 @@ function _gh-code(){
 }
 
 compdef _gh-code gh-code
+
+# MinIO
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
