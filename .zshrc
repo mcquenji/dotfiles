@@ -124,14 +124,16 @@ function pull-config() {
 	# copy files that have to be elsewhere
 	cp .zshrc ~/.zshrc -f
 	mkdir -p ~/git # create git folder if it doesn't exist
-	betterlockscreen -u ~/.config/lockscreen.png -q
-	sudo cp sleep.conf /etc/systemd/sleep.conf
-	sudo cp system.conf /etc/systemd/system.conf
-	sudo cp lightdm/lightdm.conf /etc/lightdm/lightdm.conf -f
-	sudo cp lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf -f
-	sudo rm -rf /usr/share/lightdm-webkit/themes/theme
-	sudo cp lightdm/theme /usr/share/lightdm-webkit/themes/theme -r
+	# Uncomment when not using gnome:
+	#betterlockscreen -u ~/.config/lockscreen.png -q
+	#sudo cp sleep.conf /etc/systemd/sleep.conf
+	#sudo cp system.conf /etc/systemd/system.conf
+	#sudo cp lightdm/lightdm.conf /etc/lightdm/lightdm.conf -f
+	#sudo cp lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf -f
+	#sudo rm -rf /usr/share/lightdm-webkit/themes/theme
+	#sudo cp lightdm/theme /usr/share/lightdm-webkit/themes/theme -r
 	cp theme.zsh-theme ~/.oh-my-zsh/themes/af-magic.zsh-theme -f
+	sudo cp ~/.config/win11 /usr/bin/win11
 
 	# restore current working directory
 	cd $cwd
