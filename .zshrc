@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Load wal theme
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 
 # Copy to clipboard cmd
 function copy() {
@@ -222,3 +222,6 @@ compdef _gh-code gh-code
 
 # MinIO
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# pico-sdk
+export PATH="/home/benjamin/git/pico-sdk:$PATH"

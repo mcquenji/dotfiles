@@ -1,0 +1,57 @@
+#!/bin/python
+
+import os
+import sys
+import subprocess
+import time
+
+
+def is_vm_running():
+    output = subprocess.check_output(
+        ["virsh", "--connect", "qemu:///system", "list", "--all"]
+    )
+    lines = output.decode().split("\n")
+    for line in lines:
+        if "win11" in line and line.endswith("running"):
+            return True
+    return False
+
+
+def start_vm():
+    if is_vm_running():
+        print("VM already running")
+        exit(1)
+
+    os.system("virsh --connect qemu:///system start win11")
+
+
+def stop_vm():
+    if not is_vm_running():
+        print("VM not running")
+        exit(1)
+
+    os.system("virsh --connect qemu:///system shutdown win11")
+
+
+def open_vm():
+    if not is_vm_running():
+        start_vm()
+        print("Waiting for VM to start...")
+
+        while not is_vm_running():
+            time.sleep(1)
+
+    os.system(
+        "xfreerdp /u:admin /v:192.168.122.77 /w:1080 /h:1920 /video /rfx /network:lan /gfx /bpp:32 /dynamic-resolution"
+    )
+
+
+if __name__ == "__main__":
+    if len(sys.argv) == 1:
+        open_vm()
+    elif sys.argv[1] == "up":
+        start_vm()
+    elif sys.argv[1] == "down":
+        stop_vm()
+    else:
+        print("Usage: win11 [up|down]")
