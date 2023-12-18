@@ -35,23 +35,43 @@ def stop_vm():
 
 def open_vm():
     if not is_vm_running():
-        start_vm()
+        # start_vm()
         print("Waiting for VM to start...")
 
-        while not is_vm_running():
-            time.sleep(1)
+        time.sleep(10)
 
-    os.system(
-        "xfreerdp /u:admin /v:192.168.122.77 /w:1080 /h:1920 /video /rfx /network:lan /gfx /bpp:32 /dynamic-resolution"
-    )
+    try:
+        subprocess.check_output(
+            [
+                "xfreerdp",
+                "/u:admin",
+                "/v:192.168.122.77",
+                "/w:1080",
+                "/h:1920",
+                "/video",
+                "/rfx",
+                "/network:lan",
+                "/gfx",
+                "/bpp:32",
+                "/dynamic-resolution",
+            ],
+        )
+    except subprocess.CalledProcessError as e:
+        if e.returncode == 147:
+            print(
+                "It seems like the VM took longer to start than expected. Please rerun the script."
+            )
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 1:
-        open_vm()
-    elif sys.argv[1] == "up":
-        start_vm()
-    elif sys.argv[1] == "down":
-        stop_vm()
-    else:
-        print("Usage: win11 [up|down]")
+    try:
+        if len(sys.argv) == 1:
+            open_vm()
+        elif sys.argv[1] == "up":
+            start_vm()
+        elif sys.argv[1] == "down":
+            stop_vm()
+        else:
+            print("Usage: win11 [up|down]")
+    except KeyboardInterrupt:
+        pass
