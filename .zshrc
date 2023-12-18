@@ -140,7 +140,8 @@ function pull-config() {
 
 	# reload zsh config
 	source ~/.zshrc
-	sudo systemctl restart systemd-logind
+	# uncomment if not using gdm
+	#sudo systemctl restart systemd-logind
 
 	cd $cw
 }
